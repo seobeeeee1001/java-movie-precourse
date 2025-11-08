@@ -24,4 +24,8 @@ public class Seat {
         }
     }
 
+    public Long getId() {
+        return id;
+    }
+
 }

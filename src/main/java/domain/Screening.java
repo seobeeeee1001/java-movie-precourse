@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Screening {
+
+
+    private Long id;
     private LocalDate date;
     private LocalTime startTime;
     private LocalTime endTime;
@@ -16,6 +19,10 @@ public class Screening {
     public Screening(){
 
     };
+
+    public Long getId() {
+        return id;
+    }
 
     public boolean isMovieDay(){
         if(this.date.getDayOfMonth() == 10 ||  this.date.getDayOfMonth() == 20 ||   this.date.getDayOfMonth() == 30){
